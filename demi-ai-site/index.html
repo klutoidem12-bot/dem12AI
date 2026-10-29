@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050806">
+  <title>DEMI AI — Твой личный ИИ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="DEMI AI — главная">
+      <span class="brand-mark">D</span><span>DEMI <b>AI</b></span>
+    </a>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#features">Возможности</a>
+      <a href="#chat">Чат</a>
+      <a href="#plus">DEMI PLUS</a>
+    </nav>
+    <button class="ghost-button" id="themeButton" title="Переключить свечение" aria-label="Переключить свечение">◉</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> ТВОЙ ЛИЧНЫЙ ИИ-ПОМОЩНИК</div>
+        <h1>DEMI <span>AI</span></h1>
+        <p class="hero-lead">Задавай вопросы. Создавай идеи.<br>Пиши код. Двигайся дальше.</p>
+        <p class="muted">Твой цифровой напарник — в тёмном стиле и с характером.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#chat">Начать чат <span>↗</span></a>
+          <a class="text-link" href="#features">Что умеет DEMI AI ↓</a>
+        </div>
+        <div class="mini-stats">
+          <div><strong>01</strong><span>Вопросы и идеи</span></div>
+          <div><strong>02</strong><span>Код и проекты</span></div>
+          <div><strong>03</strong><span>Твой стиль</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Неоновая иллюстрация DEMI AI">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="core-glow"></div>
+        <div class="art-label label-top">THINK DIFFERENT</div>
+        <div class="monogram">D<span>.</span></div>
+        <div class="art-chip"><span class="status-dot"></span> SYSTEM ONLINE</div>
+        <div class="art-bottom">ТВОЙ ИИ.<br><b>ТВОИ ПРАВИЛА.</b></div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading">
+        <div><div class="eyebrow">ВОЗМОЖНОСТИ</div><h2>Больше, чем просто чат.</h2></div>
+        <p class="muted">Начинаем с удобной основы — потом добавим новые функции.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">⌘</div><h3>Помощь с кодом</h3><p>Создавай сайты, разбирай ошибки и изучай программирование шаг за шагом.</p><span class="card-number">/ 01</span></article>
+        <article class="feature-card"><div class="feature-icon">✳</div><h3>Новые идеи</h3><p>Придумывай проекты, тексты, названия и способы решить задачу.</p><span class="card-number">/ 02</span></article>
+        <article class="feature-card"><div class="feature-icon">◈</div><h3>Твой интерфейс</h3><p>Тёмная тема, зелёный неон и аккуратный дизайн для компьютера и телефона.</p><span class="card-number">/ 03</span></article>
+      </div>
+    </section>
+
+    <section class="chat-section" id="chat">
+      <div class="chat-intro">
+        <div class="eyebrow">DEMI CONSOLE / 001</div>
+        <h2>Ну что,<br><span>погнали?</span></h2>
+        <p class="muted">Напиши сообщение и протестируй интерфейс. Сейчас включён демонстрационный режим.</p>
+        <div class="demo-note"><span class="status-dot"></span><span><b>DEMO MODE</b><br>Ответы пока демонстрационные. Для настоящего ИИ подключим API.</span></div>
+      </div>
+      <div class="chat-panel">
+        <div class="chat-header"><div class="bot-avatar">D</div><div><b>DEMI AI</b><small><span class="status-dot"></span> На связи</small></div><button id="clearButton" class="icon-button" title="Очистить чат">↻</button></div>
+        <div class="messages" id="messages" aria-live="polite">
+          <div class="message bot-message"><span class="message-avatar">D</span><div class="bubble"><p>Привет! Я DEMI AI 👋</p><p>Напиши, что будем делать сегодня: сайт, код, идея или просто вопрос?</p><small>DEMI / SYSTEM</small></div></div>
+        </div>
+        <div class="suggestions">
+          <button class="suggestion">💻 Сделать сайт</button><button class="suggestion">🧠 Придумать идею</button><button class="suggestion">⚙️ Помочь с кодом</button>
+        </div>
+        <form class="composer" id="chatForm">
+          <textarea id="userInput" rows="1" placeholder="Напиши сообщение..." aria-label="Сообщение" required></textarea>
+          <button class="send-button" type="submit" aria-label="Отправить сообщение">➤</button>
+        </form>
+        <div class="chat-foot">DEMI AI • ДЕМО-ИНТЕРФЕЙС <span>ENTER — отправить</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="plus">
+      <div class="section-heading">
+        <div><div class="eyebrow">ПОДПИСКА / PLUS</div><h2>Больше возможностей.</h2></div>
+        <p class="muted">Простая ежемесячная подписка. Оплата через Kaspi переводом.</p>
+      </div>
+      <div class="plus-card">
+        <div class="plus-top"><span class="plus-badge">DEMI PLUS</span><span class="plus-price">500 ₸ <small>/ месяц</small></span></div>
+        <h3>Поддержи развитие DEMI AI</h3>
+        <p>Подписка PLUS — 500 тенге за месяц. После оплаты подтверждение проверяется вручную.</p>
+        <div class="kaspi-number"><span>Номер для перевода Kaspi</span><strong>+7 778 500 24 09</strong></div>
+        <a class="primary-button" href="tel:+77785002409">Связаться по номеру ↗</a>
+        <p class="payment-note">Важно: сайт пока не проверяет оплату автоматически. После перевода сохрани чек и свяжись с владельцем для подтверждения подписки. Не отправляй данные карты или SMS-коды.</p>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">D</span><span>DEMI <b>AI</b></span></a><span>Создано в твоём стиле <i>●</i></span><span>© 2026 DEMI AI</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
